@@ -1,0 +1,152 @@
+.management-container {
+  background-color: #0b0d19;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px;
+  margin: auto;
+}
+
+.management-content {
+  text-align: left;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+.management-content strong {
+  display: block;
+  font-size: 50px;
+  margin-bottom: 20px;
+  margin: 10px;
+}
+
+.email-input {
+  width: 100%;
+  max-width: 400px;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  margin: 10px;
+}
+
+.get-started-button {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  font-size: 16px;
+  text-transform: uppercase;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.get-started-button:hover {
+  opacity: 0.9;
+}
+
+.demo-section {
+  margin: 10px;
+}
+
+.no-credit {
+  color: #777;
+  font-size: 12px;
+  margin-right: 5px;
+}
+
+.request-demo {
+  color: red;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.request-demo:hover {
+  text-decoration: underline;
+}
+
+
+@media (max-width: 768px) {
+  .management-container {
+    padding: 40px;
+  }
+
+  .management-content strong {
+    font-size: 36px; 
+  }
+
+  .email-input {
+    width: 100%;
+    max-width: 350px; 
+    padding: 8px; 
+  }
+
+  .get-started-button {
+    padding: 10px 18px;
+    font-size: 14px; 
+  }
+
+  .demo-section {
+    margin: 5px;
+  }
+
+  .no-credit, .request-demo {
+    font-size: 11px; 
+  }
+}
+
+@media (max-width: 480px) {
+  .management-container {
+    padding: 20px;
+  }
+
+  .management-content strong {
+    font-size: 28px; 
+  }
+
+  .email-input {
+    max-width: 300px; 
+    padding: 8px;
+  }
+
+  .get-started-button {
+    padding: 8px 16px;
+    font-size: 12px;
+  }
+
+  .demo-section {
+    margin: 5px;
+  }
+
+  .no-credit, .request-demo {
+    font-size: 10px; 
+  }
+}
+
+@media (max-width: 320px) {
+  .management-container {
+    padding: 10px;
+  }
+
+  .management-content strong {
+    font-size: 22px; 
+  }
+
+  .email-input {
+    max-width: 250px;
+    padding: 6px;
+  }
+
+  .get-started-button {
+    padding: 6px 14px;
+    font-size: 10px;
+  }
+
+  .demo-section {
+    margin: 3px;
+  }
+
+  .no-credit, .request-demo {
+    font-size: 9px; 
+  }
+}

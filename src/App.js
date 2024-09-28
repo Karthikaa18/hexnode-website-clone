@@ -1,23 +1,26 @@
-import logo from './logo.svg';
+import React from 'react';
+import Header from './Components/Header/Header'; 
+import Gadgets from './Components/Gadgets';
+import Features from './Components/Features';
+import Ownership from './Components/Ownership';
+import Management from './Components/Management';
+import Feedback from './Components/Feedback';
+import Integration from './Components/Integration';
+import Footer from './Components/Footer/Footer';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header />
+      <Gadgets />
+      <Features />
+      <Ownership />
+      <Management textProp='Start Managing your Android Devices'/>
+      <Feedback />
+      <Integration />
+      <Management textProp='Android Management made easy!'/>
+      <Footer />
     </div>
   );
 }

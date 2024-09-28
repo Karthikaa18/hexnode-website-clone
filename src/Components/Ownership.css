@@ -1,0 +1,157 @@
+body {
+  background-color: #f5f7fa;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+.ownership-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px;
+}
+
+.ownership-title {
+  font-size: 36px;
+  color: #0d1c3d;
+  margin-bottom: 30px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  text-align: center;
+}
+
+.ownership-content {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.ownership-content img {
+  width: 50%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.ownership-text-container {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-align: left;
+}
+
+.ownership-card {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 15px;
+  margin: 10px 0;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.ownership-option {
+  cursor: pointer;
+  font-size: 22px;
+  color: #0d1c3d;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  margin: 0;
+  text-align: left;
+}
+
+.ownership-text-content {
+  margin-top: 10px;
+}
+
+
+@media (max-width: 768px) {
+  .ownership-container {
+    padding: 20px;
+  }
+
+  .ownership-content {
+    flex-direction: column; 
+    align-items: center;
+  }
+
+  .ownership-content img {
+    width: 100%; 
+    margin-bottom: 20px;
+  }
+
+  .ownership-text-container {
+    width: 100%; 
+  }
+
+  .ownership-title {
+    font-size: 28px; 
+  }
+
+  .ownership-option {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .ownership-container {
+    padding: 15px;
+  }
+
+  .ownership-title {
+    font-size: 24px; 
+  }
+
+  .ownership-content {
+    flex-direction: column; 
+    align-items: center;
+  }
+
+  .ownership-content img {
+    width: 100%; 
+    margin-bottom: 15px;
+  }
+
+  .ownership-text-container {
+    width: 100%; 
+  }
+
+  .ownership-option {
+    font-size: 18px; 
+  }
+
+  .ownership-card {
+    padding: 10px;
+  }
+
+  .ownership-text-content p {
+    font-size: 14px; 
+  }
+}
+
+
+@media (max-width: 320px) {
+  .ownership-container {
+    padding: 10px;
+  }
+
+  .ownership-title {
+    font-size: 20px;
+  }
+
+  .ownership-content img {
+    width: 100%; 
+    margin-bottom: 10px;
+  }
+
+  .ownership-option {
+    font-size: 16px; 
+  }
+
+  .ownership-card {
+    padding: 8px;
+  }
+
+  .ownership-text-content p {
+    font-size: 12px; 
+  }
+}

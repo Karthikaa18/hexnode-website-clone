@@ -1,0 +1,278 @@
+body {
+  background-color: #1a1a1a;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.top-bar {
+  background-color: #0b0d19;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: flex-end;
+  transition: background-color 0.3s ease;
+  width: 100vw; 
+}
+
+.top-header{
+  position: fixed;
+} 
+
+.top-bar-right {
+  display: flex;
+  gap: 20px;
+  margin-right: 40px;
+}
+
+.top-item {
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+
+.header {
+  padding: 20px 0;
+  background-color: #0b0d19;
+  transition: background-color 0.3s ease;
+  width: 100vw; 
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px; 
+}
+
+.nav-list {
+  list-style-type: none;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.nav-item {
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+
+.nav-item.brand {
+  font-weight: bold;
+  font-size: 25px;
+  color: white;
+  font-family: "Lucida Console", Courier, monospace;
+}
+
+
+
+.dropdown::after {
+  content: '';
+  display: inline-block;
+  margin-left: 7px;
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  border-top: 7px solid; 
+}
+
+
+
+.top-bar:hover,
+.top-bar:hover ~ .header {
+  background-color: white; 
+}
+
+.top-bar:hover .top-item,
+.top-bar:hover ~ .header .nav-item {
+  color: black; 
+}
+
+.header:hover,
+.header:hover ~ .top-bar {
+  background-color: white; 
+}
+
+.header:hover .nav-item,
+.header:hover ~ .top-bar .top-item {
+  color: black; 
+}
+
+.free-trial-btn {
+  background-color: #E50914;
+  color: white !important;
+  border: none;
+  padding: 14px 24px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-right: 35px;
+  justify-content: center;
+}
+
+.free-trial-btn:hover {
+  background-color: #B50710; 
+}
+
+.header-section {
+  display: flex;
+  justify-content: space-between;
+  padding: 60px 20px; 
+  background-color: #0b0d19;
+  width: 100vw; 
+  box-sizing: border-box; 
+  padding-top: 160px; 
+}
+
+.header-left {
+  flex: 1;
+  padding-right: 20px;
+}
+
+.header-right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.phone-image {
+  width: 300px;
+}
+
+.badge {
+  display: flex;
+  margin-left: 60px;
+}
+
+.badge img {
+  width: 200px;
+  height: auto;
+  filter: brightness(90%);
+  transition: filter 0.3s ease;
+}
+
+.badge img:hover {
+  filter: brightness(100%);
+}
+
+.recognition-section {
+  display: flex;
+  flex-direction: column;
+  padding: 40px 20px; 
+  background-color: #1a1a1a;
+  width: 100vw; 
+  box-sizing: border-box; 
+}
+
+.recognition-logos {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  text-align: left;
+}
+
+.gartner-logo, .forrester-logo, .recognition-logo {
+  color: white;
+  max-width: 300px;
+}
+
+.gartner-logo strong, .forrester-logo strong, .recognition-logo strong {
+  font-weight: bold;
+}
+
+.gartner-logo p, .forrester-logo p {
+  font-size: 14px;
+  color: #9b9696;
+  margin-top: 10px;
+}
+
+.recognition-logo {
+  font-size: 27px;
+  font-family: system-ui;
+}
+
+.gartner-logo strong{
+  font-size: 30px;
+  font-family:  sans-serif;
+}
+
+.forrester-logo strong{
+  font-family: serif, ui-sans-serif,system-ui,Helvetica,Arial,sans-serif;
+  font-size: 30px;
+}
+
+/* Initial state */
+.top-bar, .header {
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  background-color: #0b0d19;
+  color: white;
+}
+
+.top-bar {
+  top: 0;
+  padding: 10px;
+}
+
+.header {
+  top: 40px;
+  padding: 20px 0;
+}
+
+.header.hovered, .top-bar.hovered {
+  background-color: white;
+}
+
+.header.hovered .top-item, .top-bar.hovered .top-item {
+  color: black;
+}
+
+.header.hovered .nav-item {
+  color: black;
+}
+
+.header.scrolled, .top-bar.scrolled {
+  background-color: white;
+  color: black;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.nav-list .nav-item, .free-trial-btn, .top-bar .top-item {
+  transition: color 0.3s ease;
+}
+
+.header.scrolled .nav-list .nav-item,
+.header.scrolled .free-trial-btn,
+.top-bar.scrolled .top-item {
+  color: black;
+}
+
+.header.scrolled .free-trial-btn {
+  background-color: #E50914;
+  color: white;
+}
+
+.phone-number {
+  font-weight: bold;
+}
+
+.brand {
+  font-size: 1.5rem;
+}
+
+.gartner-symbol {
+  vertical-align: sub; 
+  font-size: small;
+}
+
+.forrester-symbol {
+  vertical-align: super;
+  font-size: small;
+}
+
